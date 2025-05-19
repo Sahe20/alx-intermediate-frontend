@@ -552,4 +552,11 @@ video {
 
 [hidden]:where(:not([hidden="until-found"])) {
   display: none;
-} 
+}
+
+@media (max-width: 768px) 
+{
+  main {
+    grid-template-columns: 1fr;
+  }
+}
