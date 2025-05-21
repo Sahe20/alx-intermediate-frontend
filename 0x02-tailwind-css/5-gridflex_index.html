@@ -11,6 +11,10 @@
                 grid-template-columns: 1fr;
             }
         }
+        section{
+            display: flex;
+        }
+
     </style>
 </head>
 <body class="p-4">
@@ -18,16 +22,16 @@
         <h1 class="text-3xl">Grid and Flexbox Layout</h1>
     </header>
 
-    <main>
-        <section>
-            <div>Flexbox Item 1</div>
-            <div>Flexbox Item 2</div>
-        </section>
+    <main class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-4 min-h-screen">
+        <section class="lg:col-span-2 flex">
+            <div class="w-1/2 bg-red-200 p-4">Flexbox Item 1</div>
+            <div class="w-1/2 bg-red-400 p-4">Flexbox Item 2</div>
+        </section class="lg:col-span-2 flex">
         <aside class="bg-green-200 p-4">Sidebar</aside>
     </main>
 
     <footer class="bg-gray-800 text-white p-4 mt-4">
-        <p>&copy; 2024 John Doe's Blog</p>
+        <p>&copy; 2024 Musa Sahe's Blog</p>
     </footer>
 </body>
 </html>
