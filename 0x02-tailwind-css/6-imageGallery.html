@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid and Flexbox Layout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+            <style>
+        @media (max-width: 768px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+        }
+        section{
+            display: flex;
+        }
+
+    </style>
+</head>
+<body class="p-4">
+    <header class="bg-blue-500 text-white p-4">
+        <h1 class="text-3xl">Grid and Flexbox Layout</h1>
+    </header>
+
+    <main class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-4 min-h-screen">
+        <section class="lg:col-span-2 flex">
+            <div class="w-1/2 bg-red-200 p-4">Flexbox Item 1</div>
+            <div class="w-1/2 bg-red-400 p-4">Flexbox Item 2</div>
+        </section class="lg:col-span-2 flex">
+        <aside class="bg-green-200 p-4">Sidebar</aside>
+        <section class="grid grid-cols-3 gap-1">
+            <img src="/0x02-tailwind-css/img/boat-6686952_640.jpg" alt="Boat, Lake, Mountains image. by chriszwettler">
+            <img src="/0x02-tailwind-css/img/building-9568428_640.webp" alt="Building, City, Train image. by Chrehan6_6">
+            <img src="/0x02-tailwind-css/img/hut-9582608_640.jpg" alt="Hut, Meadow, Nature image. by YakupIpek">
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white p-4 mt-4">
+        <p>&copy; 2024 Musa Sahe's Blog</p>
+    </footer>
+</body>
+</html>
