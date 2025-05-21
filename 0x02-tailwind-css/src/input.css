@@ -6,3 +6,7 @@
 { 
 main { grid-template-columns: 1fr; } 
 }
+
+body{
+    padding: 4px;
+}
