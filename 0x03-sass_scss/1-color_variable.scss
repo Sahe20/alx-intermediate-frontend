@@ -1,0 +1,13 @@
+// 1-color_variable.scss
+
+// We define a variable for the color
+$main-text-color: #3D3D3D;
+
+// We use the variable in our CSS selectors
+body {
+  color: $main-text-color;
+}
+
+p {
+  color: $main-text-color;
+}
