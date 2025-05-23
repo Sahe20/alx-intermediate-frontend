@@ -1,0 +1,2 @@
+Firstly, I installed node version 20.16 in my ubuntu using the command: curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh through my terminal. 
+Next, I exited the terminal and reopen it and install SASS by using the following command: npm install sass -v 3.7.4 
