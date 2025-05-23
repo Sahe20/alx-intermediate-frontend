@@ -1,0 +1,15 @@
+// We define a mixin with two parameters
+@mixin set-margins($left, $right) {
+  margin-left: $left;
+  margin-right: $right;
+}
+
+// Using the mixin for body
+body {
+  @include set-margins(10px, 10px);
+}
+
+// Using the mixin for div
+div {
+  @include set-margins(15px, 15px);
+}
